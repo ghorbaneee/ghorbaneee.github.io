@@ -1,0 +1,48 @@
+---
+layout: page
+title: Contact
+subtitle: "Reach out about research collaboration, teaching, or general questions."
+permalink: /contact/
+---
+
+<div class="contact-grid">
+  <div class="contact-card">
+    <span class="contact-card__icon">{% include icon.html name="email" %}</span>
+    <div>
+      <h3 class="subhead-sm">Email</h3>
+      <p><a href="{{ site.social.email }}">{{ site.author.email }}</a></p>
+    </div>
+  </div>
+
+  <div class="contact-card">
+    <span class="contact-card__icon">{% include icon.html name="map-pin" %}</span>
+    <div>
+      <h3 class="subhead-sm">Lab &amp; Institution</h3>
+      <p>{{ site.author.department }}<br>{{ site.author.institution }}<br>{{ site.author.location }}</p>
+    </div>
+  </div>
+
+  <div class="contact-card">
+    <span class="contact-card__icon">{% include icon.html name="scholar" %}</span>
+    <div>
+      <h3 class="subhead-sm">Google Scholar</h3>
+      <p><a href="{{ site.social.scholar }}" target="_blank" rel="noopener">View publications &amp; citations</a></p>
+    </div>
+  </div>
+
+  <div class="contact-card">
+    <span class="contact-card__icon">{% include icon.html name="github" %}</span>
+    <div>
+      <h3 class="subhead-sm">GitHub</h3>
+      <p><a href="{{ site.social.github }}" target="_blank" rel="noopener">{{ site.social.github }}</a></p>
+    </div>
+  </div>
+
+  <div class="contact-card">
+    <span class="contact-card__icon">{% include icon.html name="linkedin" %}</span>
+    <div>
+      <h3 class="subhead-sm">LinkedIn</h3>
+      <p><a href="{{ site.social.linkedin }}" target="_blank" rel="noopener">Connect on LinkedIn</a></p>
+    </div>
+  </div>
+</div>

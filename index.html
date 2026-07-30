@@ -1,0 +1,157 @@
+---
+layout: home
+title: null
+---
+
+<!-- ============================= HERO ============================= -->
+<div class="wrap hero">
+  <div class="hero__grid">
+    <div>
+      <p class="hero__eyebrow">{{ site.author.role }} · {{ site.author.institution }}</p>
+      <h1>{{ site.author.name }}</h1>
+      <p class="hero__tagline">{{ site.description }}</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="{{ '/publications/' | relative_url }}">
+          View Publications {% include icon.html name="arrow-right" %}
+        </a>
+        <a class="btn btn--secondary" href="{{ '/assets/cv/Amirhossein_Ghorbani_CV.pdf' | relative_url }}" target="_blank" rel="noopener">
+          {% include icon.html name="download" %} Download CV
+        </a>
+      </div>
+      <p class="hero__location">{% include icon.html name="map-pin" %} {{ site.author.location }}</p>
+    </div>
+    <div class="hero__photo-wrap">
+      <img class="hero__photo" src="{{ site.author.photo | relative_url }}" alt="Portrait of {{ site.author.name }}">
+    </div>
+  </div>
+</div>
+
+<!-- ============================= ABOUT ============================= -->
+<section id="about">
+  <div class="wrap">
+    <div class="section__head">
+      <p class="section__kicker">About</p>
+      <h2>Studying flames that only look simple</h2>
+    </div>
+
+    <div class="card-grid two-col--wide-left">
+      <div>
+        <p>I am a Ph.D. researcher at the University of British Columbia, working in experimental combustion and sustainable aviation fuel research. My work focuses on understanding how liquid-fuel flames behave under stretch, transport, and thermo-diffusive effects using various flame configurations, optical diagnostics, and flow-field measurements.</p>
+        <p>I spend much of my time designing and troubleshooting experiments, analyzing complex flame behaviour, and connecting physical observations with combustion modeling tools such as Cantera, MATLAB, and Python. My research combines hands-on experimentation with combustion theory to study flame structure, laminar flame speed, and Markstein behaviour in practical fuel systems.</p>
+        <p>What interests me most is the physics behind flames that appear simple but are incredibly complex beneath the surface &mdash; especially in the context of cleaner propulsion and sustainable aviation energy systems.</p>
+      </div>
+      <div>
+        <h3 class="subhead">Education</h3>
+        <ul class="timeline">
+          {% for ed in site.data.education %}
+          <li>
+            <p class="timeline__years">{{ ed.years }}</p>
+            <p class="item-title">{{ ed.degree }}</p>
+            <p class="timeline__org">{{ ed.institution }}, {{ ed.location }}</p>
+            <p class="detail-muted">{{ ed.detail }}</p>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="subhead mt-lg">Experience</h3>
+    <ul class="timeline card-grid two-col">
+      {% for e in site.data.experience %}
+      <li>
+        <p class="timeline__years">{{ e.years }}</p>
+        <p class="item-title">{{ e.role }}</p>
+        <p class="timeline__org">{{ e.org }}</p>
+        <p class="item-detail">{{ e.detail }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<!-- ============================= RESEARCH ============================= -->
+<section id="research">
+  <div class="wrap">
+    <div class="section__head">
+      <p class="section__kicker">Research</p>
+      <h2>Research Interests</h2>
+    </div>
+    <div class="card-grid">
+      {% for r in site.data.research_pillars %}
+      <div class="card">
+        <div class="card__icon">{% include icon.html name=r.icon %}</div>
+        <h3>{{ r.title }}</h3>
+        <p>{{ r.detail }}</p>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="section__foot">
+      <p class="small-muted">Also interested in:</p>
+      {% for tag in site.data.research_tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ============================= PROJECTS ============================= -->
+<section id="projects">
+  <div class="wrap">
+    <div class="section__head">
+      <p class="section__kicker">Selected Work</p>
+      <h2>Projects</h2>
+    </div>
+    <div class="card-grid">
+      {% for p in site.data.projects %}
+      <div class="card project-card">
+        <h3 class="no-mb">{{ p.title }}</h3>
+        <p class="project-card__meta">{{ p.years }} &middot; {{ p.tools }}</p>
+        <p>{{ p.detail }}</p>
+        {% if p.link and p.link != "" %}
+        <a class="project-card__link" href="{{ p.link }}" target="_blank" rel="noopener">{{ p.link_text }} {% include icon.html name="external" %}</a>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ============================= NEWS ============================= -->
+<section id="news">
+  <div class="wrap">
+    <div class="section__head">
+      <p class="section__kicker">Timeline</p>
+      <h2>News &amp; Updates</h2>
+    </div>
+    <ul class="news-list">
+      {% for n in site.data.news %}
+      <li class="news-item">
+        <span class="news-item__date">{{ n.date }}</span>
+        <span>
+          {% if n.link and n.link != "" %}<a href="{{ n.link }}" target="_blank" rel="noopener">{{ n.text }}</a>{% else %}{{ n.text }}{% endif %}
+        </span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<!-- ============================= AWARDS ============================= -->
+<section id="awards">
+  <div class="wrap">
+    <div class="section__head">
+      <p class="section__kicker">Recognition</p>
+      <h2>Awards &amp; Honors</h2>
+    </div>
+    <ul class="award-list">
+      {% for a in site.data.awards %}
+      <li class="award-item">
+        <span class="award-item__icon">{% include icon.html name="award" %}</span>
+        <span>
+          <strong>{{ a.title }}</strong> &mdash; {{ a.org }} <span class="award-item__meta">({{ a.year }})</span><br>
+          <span class="award-item__meta">{{ a.detail }}</span>
+        </span>
+      </li>
+      {% endfor %}
+    </ul>
+    <p class="section__foot small-muted"><a href="{{ '/cv/#awards' | relative_url }}">See full list on the CV page &rarr;</a></p>
+  </div>
+</section>

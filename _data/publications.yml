@@ -1,0 +1,32 @@
+# ---------------------------------------------------------------------------
+# Publications
+# Add a new entry at the TOP of the relevant list (journal or conference) each
+# time you publish. Fields: title, authors, venue, year, link, citations.
+# "authors" should bold your own name using **Ghorbani** (rendered by Liquid
+# in publications.html). citations is optional — leave blank until Scholar
+# reports a count.
+# ---------------------------------------------------------------------------
+
+journal_articles:
+  - title: "A novel CFD framework for frost-free domestic refrigerators using fan performance curve and radiator model"
+    authors: "A. Ghorbani, S.M. Tabatabaei, H. Nasiri, B. Sajadi, A. Jalali"
+    venue: "Results in Engineering"
+    volume: "25, 103947"
+    year: 2025
+    link: "https://www.sciencedirect.com/science/article/pii/S2590123025000350"
+    citations: 9
+
+conference_papers:
+  - title: "Experimental and numerical assessment of the unstretched laminar flame speed and Markstein length for n-decane and iso-octane mixtures in preheated, premixed flames"
+    authors: "A. Ghorbani, M. Nahvi, S. Kheirkhah"
+    venue: "Combustion Institute – Canadian Section, Spring Technical Meeting"
+    year: 2026
+    link: ""
+    citations: 0
+
+  - title: "Unstretched laminar flame speed and Markstein length of surrogates for Sustainable Aviation Fuels"
+    authors: "A. Ghorbani, M. Nahvi, S. Kheirkhah"
+    venue: "Combustion Institute – Canadian Section, Spring Technical Meeting"
+    year: 2025
+    link: ""
+    citations: 0

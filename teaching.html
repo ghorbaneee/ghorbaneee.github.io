@@ -1,0 +1,21 @@
+---
+layout: page
+title: Teaching
+subtitle: "Teaching assistant roles across engineering thermodynamics, fluid mechanics, combustion, and structures."
+permalink: /teaching/
+---
+
+{% for group in site.data.teaching %}
+<div class="teaching-group">
+  <h3>{{ group.institution }}</h3>
+  <p class="teaching-group__years">{{ group.years }}</p>
+  <ul class="course-list">
+    {% for c in group.courses %}
+    <li>
+      <span class="code">{{ c.code }}</span>
+      <span>{{ c.name }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endfor %}

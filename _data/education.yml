@@ -1,0 +1,12 @@
+# Reverse-chronological. Add new degrees at the top.
+- degree: "Ph.D. in Mechanical Engineering"
+  institution: "University of British Columbia"
+  location: "Kelowna, BC, Canada"
+  years: "2023 – 2027 (expected)"
+  detail: "GPA: 90.8/100 · Supervisor: Dr. Sina Kheirkhah"
+
+- degree: "B.S. in Mechanical Engineering"
+  institution: "University of Tehran"
+  location: "Tehran, Iran"
+  years: "2018 – 2022"
+  detail: "GPA: 3.85/4.00 (last two years: 4.00/4.00) · Supervisor: Dr. Alireza Jalali · Thesis grade: 4.00/4.00"

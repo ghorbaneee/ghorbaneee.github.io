@@ -1,0 +1,18 @@
+# The 3-4 focused research pillars shown on the Home page. Keep this short —
+# it's meant to give a visitor an immediate sense of your core expertise.
+# Broader/secondary interests go in research_tags.yml instead.
+- title: "Experimental Combustion & Flame Physics"
+  icon: "flame"
+  detail: "Flame behavior under stretch, transport, and thermo-diffusive effects across multiple flame configurations."
+
+- title: "Sustainable Aviation Fuels"
+  icon: "leaf"
+  detail: "Laminar flame speed and Markstein length of SAF surrogates for cleaner propulsion and aviation energy systems."
+
+- title: "Optical Diagnostics & Flow Measurement"
+  icon: "eye"
+  detail: "PIV and optical flow-field measurements to connect physical observation with combustion theory."
+
+- title: "Combustion Modeling"
+  icon: "chip"
+  detail: "Cantera, MATLAB, and Python tools linking experimental results to kinetic and CFD models."

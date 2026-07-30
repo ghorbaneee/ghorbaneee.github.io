@@ -1,0 +1,63 @@
+---
+layout: page
+title: CV
+subtitle: "Full curriculum vitae — education, experience, skills, and awards."
+permalink: /cv/
+---
+
+<div class="button-row">
+  <a class="btn btn--primary" href="{{ '/assets/cv/Amirhossein_Ghorbani_CV.pdf' | relative_url }}" download>
+    {% include icon.html name="download" %} Download PDF
+  </a>
+  <a class="btn btn--secondary" href="{{ '/assets/cv/Amirhossein_Ghorbani_CV.pdf' | relative_url }}" target="_blank" rel="noopener">
+    {% include icon.html name="external" %} Open in new tab
+  </a>
+</div>
+
+<iframe class="cv-embed" src="{{ '/assets/cv/Amirhossein_Ghorbani_CV.pdf' | relative_url }}" title="Amirhossein Ghorbani CV"></iframe>
+
+<h2 class="mt-xl subhead-lg">Skills</h2>
+<div class="card-grid two-col">
+  <div>
+    <h3 class="subhead-sm">Software &amp; Tools</h3>
+    <ul class="skill-grid one-col">
+      {% for s in site.data.skills.software %}
+      <li><span>{{ s.name }}</span><span class="level">{{ s.level }}</span></li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div>
+    <h3 class="subhead-sm">Languages</h3>
+    <ul class="skill-grid one-col">
+      {% for l in site.data.skills.languages %}
+      <li><span>{{ l.name }}</span><span class="level">{{ l.level }}</span></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<h2 id="awards" class="mt-xl subhead-lg">Awards &amp; Honors</h2>
+<ul class="award-list">
+  {% for a in site.data.awards %}
+  <li class="award-item">
+    <span class="award-item__icon">{% include icon.html name="award" %}</span>
+    <span>
+      <strong>{{ a.title }}</strong> &mdash; {{ a.org }} <span class="award-item__meta">({{ a.year }})</span><br>
+      <span class="award-item__meta">{{ a.detail }}</span>
+    </span>
+  </li>
+  {% endfor %}
+</ul>
+
+<h2 class="mt-xl subhead-lg">Professional Development</h2>
+<ul class="award-list">
+  {% for c in site.data.courses %}
+  <li class="award-item">
+    <span class="award-item__icon">{% include icon.html name="book" %}</span>
+    <span>
+      <strong>{{ c.name }}</strong> <span class="award-item__meta">({{ c.year }})</span><br>
+      <span class="award-item__meta">{{ c.org }}</span>
+    </span>
+  </li>
+  {% endfor %}
+</ul>

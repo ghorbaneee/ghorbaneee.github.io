@@ -1,0 +1,36 @@
+# Full teaching record, grouped by institution (most recent institution first,
+# courses listed most-recent-first within each group).
+
+- institution: "University of British Columbia"
+  years: "2023 – Present"
+  courses:
+    - code: "ENGR 479"
+      name: "Laser-Based Measurements"
+    - code: "ENGR 375"
+      name: "Energy System Design"
+    - code: "ENGR 497"
+      name: "Combustion Processes"
+    - code: "ENGR 449"
+      name: "Aircraft Structures"
+    - code: "ENGR 385"
+      name: "Heat Transfer Applications"
+    - code: "ENGR 310 / APSC 253"
+      name: "Fluid Mechanics I & II"
+    - code: "APSC 252"
+      name: "Thermodynamics I"
+    - code: "APSC 182 / 183"
+      name: "Matter and Energy I & II"
+
+- institution: "University of Tehran"
+  years: "2018 – 2022"
+  courses:
+    - code: "Chief TA"
+      name: "Physics I — quiz & homework designer, part-time instructor"
+    - code: "Chief TA"
+      name: "Fluid Mechanics I — quiz & homework designer, part-time instructor"
+    - code: "TA"
+      name: "Heat Transfer I — quiz & homework designer, part-time instructor"
+    - code: "TA"
+      name: "Computational Fluid Dynamics — quiz & homework designer, part-time instructor"
+    - code: "TA"
+      name: "Magnetism — quiz & homework designer"

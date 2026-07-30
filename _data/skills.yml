@@ -1,0 +1,16 @@
+software:
+  - { name: "ANSYS Fluent", level: "Advanced" }
+  - { name: "SOLIDWORKS", level: "Advanced" }
+  - { name: "EES", level: "Advanced" }
+  - { name: "MATLAB", level: "Proficient" }
+  - { name: "C++", level: "Proficient" }
+  - { name: "MSC Adams", level: "Proficient" }
+  - { name: "LaTeX", level: "Proficient" }
+  - { name: "Python", level: "Working knowledge" }
+  - { name: "COMSOL", level: "Working knowledge" }
+  - { name: "CATIA", level: "Working knowledge" }
+
+languages:
+  - { name: "English", level: "Advanced — IELTS 7.5" }
+  - { name: "Persian", level: "Native" }
+  - { name: "Arabic", level: "Basic" }

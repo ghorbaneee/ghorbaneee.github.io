@@ -1,0 +1,22 @@
+{%- comment -%}
+  Renders the row of social/profile icons. Usage: {% include social-links.html %}
+  Each link only renders if the corresponding _config.yml value is non-empty,
+  so leaving a field blank (e.g. orcid: "") hides that icon automatically.
+{%- endcomment -%}
+<ul class="social-links">
+  {% if site.social.email and site.social.email != "" %}
+  <li><a href="{{ site.social.email }}" aria-label="Email {{ site.author.name }}">{% include icon.html name="email" %}</a></li>
+  {% endif %}
+  {% if site.social.scholar and site.social.scholar != "" %}
+  <li><a href="{{ site.social.scholar }}" target="_blank" rel="noopener" aria-label="Google Scholar profile">{% include icon.html name="scholar" %}</a></li>
+  {% endif %}
+  {% if site.social.github and site.social.github != "" %}
+  <li><a href="{{ site.social.github }}" target="_blank" rel="noopener" aria-label="GitHub profile">{% include icon.html name="github" %}</a></li>
+  {% endif %}
+  {% if site.social.linkedin and site.social.linkedin != "" %}
+  <li><a href="{{ site.social.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn profile">{% include icon.html name="linkedin" %}</a></li>
+  {% endif %}
+  {% if site.social.orcid and site.social.orcid != "" %}
+  <li><a href="{{ site.social.orcid }}" target="_blank" rel="noopener" aria-label="ORCID profile">{% include icon.html name="orcid" %}</a></li>
+  {% endif %}
+</ul>

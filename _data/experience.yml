@@ -1,0 +1,23 @@
+# Reverse-chronological research & teaching experience shown on the Home
+# "About" timeline. Full teaching history lives in teaching.yml instead —
+# this file is the shorter "career at a glance" version.
+
+- role: "Research Assistant"
+  org: "Combustion for Propulsion and Power Laboratory, UBC"
+  years: "2023 – Present"
+  detail: "Laminar flame speed and Markstein length of sustainable aviation fuel surrogates; optical diagnostics and PIV flow-field measurements."
+
+- role: "Teaching Assistant"
+  org: "University of British Columbia"
+  years: "2023 – Present"
+  detail: "Thermodynamics, Fluid Mechanics, Combustion Processes, Aircraft Structures, Heat Transfer, and Laser-Based Measurements courses."
+
+- role: "Research Assistant"
+  org: "Gas Turbine Lab, University of Tehran"
+  years: "2020 – 2022"
+  detail: "CFD modeling of frost-free domestic refrigerators; fan performance curve and radiator-based evaporator representation, validated against experiment."
+
+- role: "Teaching Assistant"
+  org: "University of Tehran"
+  years: "2018 – 2022"
+  detail: "Chief TA for Physics I and Fluid Mechanics I; quiz/homework design and part-time instruction across five undergraduate courses."

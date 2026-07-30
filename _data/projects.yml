@@ -1,0 +1,24 @@
+# Project cards shown on the Home page. Each maps to real research/publication
+# work but is written with more narrative context than the citation itself.
+# Add new projects at the TOP.
+- title: "Flame Speed & Markstein Length of SAF Surrogates"
+  years: "2023 – Present"
+  tools: "Optical diagnostics · PIV · MATLAB · Cantera"
+  detail: >-
+    Measuring unstretched laminar flame speed and Markstein length for
+    sustainable aviation fuel surrogates and reference fuels (n-decane,
+    iso-octane) across preheated, premixed flame configurations, at the
+    Combustion for Propulsion and Power Laboratory, UBC.
+  link: ""
+  link_text: ""
+
+- title: "CFD Framework for Frost-Free Domestic Refrigerators"
+  years: "2020 – 2022"
+  tools: "ANSYS Fluent · Rotating-frame fan model · Experimental validation"
+  detail: >-
+    Built and validated a CFD framework predicting airflow and temperature
+    distribution in a domestic refrigerator, modeling fan–evaporator
+    interactions with a rotating-frame fan and radiator-based evaporator.
+    Validated against experiment to within 0.2–1.1°C and <7% flow rate.
+  link: "https://www.sciencedirect.com/science/article/pii/S2590123025000350"
+  link_text: "Read the paper"

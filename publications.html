@@ -1,0 +1,56 @@
+---
+layout: page
+title: Publications
+subtitle: "Peer-reviewed articles and conference presentations. Full list also on Google Scholar."
+permalink: /publications/
+---
+
+<div class="mb-md">
+  <a class="btn btn--secondary" href="{{ site.social.scholar }}" target="_blank" rel="noopener">
+    {% include icon.html name="scholar" %} View on Google Scholar
+  </a>
+</div>
+
+<h2 class="subhead-lg">Journal Articles</h2>
+<ul class="pub-list">
+  {% for pub in site.data.publications.journal_articles %}
+  <li class="pub-item">
+    <span class="pub-item__year">{{ pub.year }}</span>
+    <div>
+      <p class="pub-item__title">{{ pub.title }}</p>
+      <p class="pub-item__authors">{{ pub.authors }}</p>
+      <p class="pub-item__venue">{{ pub.venue }}{% if pub.volume %}, {{ pub.volume }}{% endif %}</p>
+      <div class="pub-item__actions">
+        {% if pub.link and pub.link != "" %}
+        <a class="pub-item__link" href="{{ pub.link }}" target="_blank" rel="noopener">Read paper {% include icon.html name="external" %}</a>
+        {% endif %}
+        {% if pub.citations and pub.citations > 0 %}
+        <span class="pub-item__citations">Cited by {{ pub.citations }}</span>
+        {% endif %}
+      </div>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+
+<h2 class="subhead-lg mt-lg">Conference Presentations</h2>
+<ul class="pub-list">
+  {% for pub in site.data.publications.conference_papers %}
+  <li class="pub-item">
+    <span class="pub-item__year">{{ pub.year }}</span>
+    <div>
+      <p class="pub-item__title">{{ pub.title }}</p>
+      <p class="pub-item__authors">{{ pub.authors }}</p>
+      <p class="pub-item__venue">{{ pub.venue }}</p>
+      <div class="pub-item__actions">
+        {% if pub.link and pub.link != "" %}
+        <a class="pub-item__link" href="{{ pub.link }}" target="_blank" rel="noopener">Read more {% include icon.html name="external" %}</a>
+        {% endif %}
+        {% if pub.citations and pub.citations > 0 %}
+        <span class="pub-item__citations">Cited by {{ pub.citations }}</span>
+        {% endif %}
+      </div>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
