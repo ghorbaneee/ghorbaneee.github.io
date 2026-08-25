@@ -1,6 +1,12 @@
 description: |-
   ---------------------------------------------------------------------------
-    CTI file converted from solution object
+    A reduced chemical mechanism for ndecane + isooctane oxidation.
+    Size: [143] species, [1133] reactions
+    Base mechanism was built on JetSurF 2.0 and skeletal mechanism of Yoo et al. 
+    (Proc. Combust. Inst. 34 (2013))
+
+    Developed by: Amirhossein Ghorbani
+    Citation: 
   ---------------------------------------------------------------------------
 
 generator: cti2yaml
