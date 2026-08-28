@@ -4129,7 +4129,7 @@ reactions:
 - equation: C3H4-A + H => C2H2 + CH3  # Reaction 483
   rate-constant: {A: 6.407e+25, b: -3.345, Ea: 2.177e+04}
 - equation: C3H3 + H => C3H2 + H2  # Reaction 484
-  rate-constant: {A: 555565.0e+13, b: 0.0, Ea: 0.0}
+  rate-constant: {A: 55e+13, b: 0.0, Ea: 0.0}
 - equation: C3H2 + H2 => C3H3 + H  # Reaction 485
   rate-constant: {A: 5.999e+07, b: 1.365, Ea: 4110.0}
 - equation: C3H2 + OH => C2H2 + HCO  # Reaction 486
