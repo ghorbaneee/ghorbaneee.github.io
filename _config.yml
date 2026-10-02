@@ -5,9 +5,9 @@
 # ---------------------------------------------------------------------------
 
 title: "Amirhossein Ghorbani"
-tagline: "PhD Researcher in Combustion & Sustainable Aviation Fuels"
+tagline: "PhD Candidate in Combustion & Sustainable Aviation Fuels"
 description: >-
-  Personal academic website of Amirhossein Ghorbani, PhD student in Mechanical
+  Personal academic website of Amirhossein Ghorbani, PhD candidate in Mechanical
   Engineering at the University of British Columbia, researching flame physics,
   optical diagnostics, and sustainable aviation fuels.
 url: "https://ghorbaneee.github.io"
@@ -17,7 +17,7 @@ baseurl: ""
 author:
   name: "Amirhossein Ghorbani"
   short_name: "Amir Ghorbani"
-  role: "PhD Student, Mechanical Engineering"
+  role: "PhD Candidate, Mechanical Engineering"
   institution: "University of British Columbia"
   department: "School of Engineering — Combustion for Propulsion and Power Laboratory"
   location: "Kelowna, British Columbia, Canada"
